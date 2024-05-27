@@ -1,18 +1,20 @@
 package bank;
 
-public interface Account {
-    String bankAccountHolder = "";
-    String bankAccountNum = "";
-    double balance = 0;
+import person.PersonProfile;
 
-    public String getBankAccountHolder();
-    public void setBankAccountHolder(String bankAccountHolder);
+import java.util.ArrayList;
+
+public interface Account {
+    public PersonProfile getBankAccountHolder();
+    public void setBankAccountHolder(PersonProfile bankAccountHolder);
 
     public String getBankAccountNum();
 
     public double getBalance();
+    public double setBalance(double newBalance);
     public void withdraw(double amount);
     public void deposit(double amount);
 
+    public AccountType getAccountType();
 
 }
