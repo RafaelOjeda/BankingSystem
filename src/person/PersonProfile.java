@@ -82,4 +82,8 @@ public class PersonProfile {
 //            }
 //        }
 //    }
+
+    public String toString() {
+        return "[" + firstName + "," + lastName + "," + socialSecurity + "]";
+    }
 }
