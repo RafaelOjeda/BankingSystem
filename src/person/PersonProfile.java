@@ -1,5 +1,4 @@
 package person;
-import bank.BankAccount;
 
 import java.util.ArrayList;
 import java.util.HashMap;
